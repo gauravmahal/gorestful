@@ -9,7 +9,7 @@ import (
 	"strings"
 	"time"
 
-	"romanNumerals"
+	"github.com/gauravmahal/gorestful/ch1/romanNumerals"
 )
 
 func main() {
