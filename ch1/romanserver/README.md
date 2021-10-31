@@ -1,13 +1,14 @@
 
 ## Setting up Swagger UI 
-
-_start the docker deamons_
-    systemctl start docker
-_install Swagger UI via Docker   
-    docker pull swaggerapi/swagger-ui
-_run the server    
-    sudo docker run --rm -p 80:8080 -e SWAGGER_JSON=/app/openapi.json -v ~/git_repos/Learn-New-Skills/gorestful/ch1/romanserver:/app swaggerapi/swagger-ui
-_launch http://locahost in the browser
+'''
+    _start the docker deamons_
+        systemctl start docker
+    // install Swagger UI via Docker   
+        docker pull swaggerapi/swagger-ui
+    --run the server    
+        sudo docker run --rm -p 80:8080 -e SWAGGER_JSON=/app/openapi.json -v ~/git_repos/Learn-New-Skills/gorestful/ch1/romanserver:/app swaggerapi/swagger-ui
+    _launch http://locahost in the browser
+'''
 
 ### Checking the port on which the server is running 
     lsof -i TCP:8000
