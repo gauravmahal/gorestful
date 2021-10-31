@@ -1,6 +1,6 @@
 
 ## Setting up Swagger UI 
-```shell
+```javascript
 // start the docker deamons
     systemctl start docker
 // install Swagger UI via Docker   
@@ -19,7 +19,7 @@
     curl -X GET "http://localhost:8000/roman_number/4" -v
 
 ## Running supervisord
-```shell
+```c
 // Adding .conf file and then using to run 
     supervisord -c supervisord.conf
 // .conf file can be picked from /etc/supervisord.conf also
@@ -52,8 +52,8 @@
     go install .
 
 ## Adding submodule 
-```
-//Adding sub-module
+```javascript
+// Adding sub-module
     git submodule add git@github.com:gauravmahal/gorestful.git
 // updating the submodule 
     git submodule update --int --remote
