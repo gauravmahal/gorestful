@@ -1,13 +1,15 @@
 
 ## Setting up Swagger UI 
-```
-    _start the docker deamons
-        systemctl start docker
-    // install Swagger UI via Docker   
-        docker pull swaggerapi/swagger-ui
-    --run the server    
-        sudo docker run --rm -p 80:8080 -e SWAGGER_JSON=/app/openapi.json -v ~/git_repos/Learn-New-Skills/gorestful/ch1/romanserver:/app swaggerapi/swagger-ui
-    _launch http://locahost in the browser
+```shell
+// start the docker deamons
+    systemctl start docker
+// install Swagger UI via Docker   
+    docker pull swaggerapi/swagger-ui
+// run the server    
+    sudo docker run --rm -p 80:8080 -e SWAGGER_JSON=/app/openapi.json -v 
+                    ~/git_repos/Learn-New-Skills/gorestful/ch1/romanserver:/app 
+                    swaggerapi/swagger-ui
+// launch http://locahost in the browser
 ```
 
 ### Checking the port on which the server is running 
@@ -17,23 +19,25 @@
     curl -X GET "http://localhost:8000/roman_number/4" -v
 
 ## Running supervisord
-```
-        supervisord -c supervisord.conf
-    // .conf file can be picked from /etc/supervisord.conf also
-        supervisorctl 
-    // running from current directory then    
-        supervisorctl reread 
-        supervisorctl update
-        supervisorctl
+```shell
+// Adding .conf file and then using to run 
+    supervisord -c supervisord.conf
+// .conf file can be picked from /etc/supervisord.conf also
+    supervisorctl 
+// running from current directory then    
+    supervisorctl reread 
+    supervisorctl update
+    supervisorctl
 ``` 
 
 ## Installing npm and gulp 
 ```javascript
+// Adding npm
     pamac install npm
     sudo npm install --global gulp-cli
     sudo npm install gulp gulp-shell
     gulp --version
-_list all the tasks in gulpfile.js 
+// list all the tasks in gulpfile.js 
     gulp --tasks
     gulp
 ```
@@ -49,6 +53,7 @@ _list all the tasks in gulpfile.js
 
 ## Adding submodule 
 ```
+//Adding sub-module
     git submodule add git@github.com:gauravmahal/gorestful.git
 // updating the submodule 
     git submodule update --int --remote
