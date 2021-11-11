@@ -3,10 +3,10 @@
 
 ### For background process  
 ```shell
-    // For background running process, use below to find the processID
-    pgrep go 
-    // then to kill it use 
-    kill pid //-9 optional
+// For background running process, use below to find the processID
+pgrep go 
+// then to kill it use 
+kill pid //-9 optional
 ```
 ## httprouter, a lightweight HTTP router
 
@@ -17,11 +17,13 @@
 * The router's design encourages building sensible, hierarchical RESTful APIs
 * You can build efficient static file servers
 ```go
-    // To install httprouter
-    go get github.com/julienschmidt/httprouter
-    // To use it 
-    import "github.com/julienschmidt/httprouter"
-    // To execute system commands and get the output back to the program
-    import "os/exec"
-    // arguments... means an array of strings unpacked as arguments in Go
-    cmd := exec.Command(command, arguments...)
+// To install httprouter
+go get github.com/julienschmidt/httprouter
+// To use it 
+import "github.com/julienschmidt/httprouter"
+// To execute system commands and get the output back to the program
+import "os/exec"
+// arguments... means an array of strings unpacked as arguments in Go
+cmd := exec.Command(command, arguments...)
+```
+
