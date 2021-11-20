@@ -1,0 +1,3 @@
+[submodule "gorestful"]
+	path = gorestful
+	url = git@github.com:narenaryan/gorestful.git
